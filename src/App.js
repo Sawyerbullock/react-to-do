@@ -17,7 +17,7 @@ class App extends Component {
 
   deleteTodo(index) {
     this.setState({
-      todos: this.state.todos.filter(el => el !== index)
+      todos: this.state.todos.filter((el, tempIndex) => tempIndex !== index)
     })
   }
 
